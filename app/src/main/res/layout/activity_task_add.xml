@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+<TableRow
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:gravity="center_horizontal">
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="370dp"
+        android:layout_height="match_parent"
+        android:text="task name"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        />
+</TableRow>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Begin task: "
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tvBeginDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="date"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/btnAddDate"
+            android:text="Click to choose begin date"
+            android:onClick="onClickAddDate"
+            />
+
+    </TableRow>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="End task: "
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tvEndDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="date"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/btnAddEndDate"
+            android:text="Click to choose end date"
+            android:onClick="onClickEndDate"
+            />
+
+    </TableRow>
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Period: "
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tvPeriod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="time"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnAddPeriodTime"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="onClickPeriod"
+            android:text="Click to choose period" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_height="100dp"
+            android:inputType="textMultiLine"
+            android:text="description" />
+    </TableRow>
+
+    <TableRow
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <Button
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/btnCreateTask"
+            android:text="Create task"
+            android:onClick="onClickCreateTask"
+            />
+    </TableRow>
+
+
+
+
+
+
+</TableLayout>
